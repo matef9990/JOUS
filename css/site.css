@@ -1,0 +1,507 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+/*    margin-bottom: 60px;
+*/}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+section#intro {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+section#intro {
+    padding: 0 0 0 0;
+}
+
+    section#intro.inner {
+        padding: 140px 0 30px;
+    }
+
+        section#intro.inner h2 strong {
+            color: #fff;
+        }
+
+        section#intro.inner h2 {
+            font-size: 32px;
+        }
+
+section#intro {
+    text-align: center;
+}
+
+.sy-caption-wrap .sy-caption {
+    position: relative;
+    left: -50%;
+    font-size: 48px;
+    color: #fff;
+    line-height: 1.1em;
+}
+/* ==== general main content style ==== */
+#maincontent.section {
+    padding: 30px 0 40px 0;
+}
+
+/*---------------------------------------------------------------------------------------------------------
+intro animation
+---------------------------------------------------------------------------------------------------------*/
+/*slide 1*/
+
+/* yello Holicopter Animation  */
+
+#yellowHoli {
+    animation: yHoliMove 10s ease-out forwards;
+}
+
+@keyframes yHoliMove {
+    from {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        transform: translate3d(-424px, 0px, 0px);
+    }
+}
+
+/* end of holicopter animation */
+/* rocket Animation */
+
+#rocket {
+    animation: rocketMove 15s 3s ease-out forwards;
+}
+
+@keyframes rocketMove {
+    from {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        transform: translate3d(0px, -2000px, 0px);
+    }
+    /* end of rocket Animation */
+}
+
+#c1,
+#c4 {
+    animation: sChartMover 2s linear infinite alternate-reverse;
+}
+
+#c2,
+#c3 {
+    animation: sChartMover 2s 1s linear infinite alternate-reverse;
+}
+
+@keyframes sChartMover {
+    from {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        transform: translate3d(0px, -20px, 0px);
+    }
+}
+
+/* crane Move */
+#Crane {
+    animation: craneMove 10s ease-in-out infinite alternate-reverse;
+    transform-origin: 20% 20%;
+    transform-box: fill-box;
+}
+
+@keyframes craneMove {
+    from {
+        transform: rotateY(-30deg);
+    }
+
+    to {
+        transform: rotateY(15deg);
+    }
+}
+
+/* end of crane Move */
+/*end of slide 1*/
+/*  gear annimation */
+#greyGear {
+    animation: GearMove 8s linear infinite backwards normal;
+    transform-origin: center center;
+    transform-box: fill-box;
+}
+
+#redGear {
+    animation: GearMove 10s linear infinite forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes GearMove {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* Male hand animation  */
+#maleHand,
+#maleArm {
+    animation: handMove 2s ease-in-out infinite forwards alternate-reverse;
+    transform-origin: right;
+}
+
+@keyframes handMove {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(-3deg);
+    }
+}
+
+#mobileScreen {
+    animation: mobile 7s 1s ease-in-out infinite alternate;
+}
+
+    #mobileScreen :hover {
+        -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        -o-animation-play-state: paused;
+        animation-play-state: paused;
+    }
+
+@keyframes mobile {
+    from {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        transform: translate3d(175px, 103px, 0px);
+    }
+}
+
+/* boy hand animation */
+
+#boyHand {
+    animation: typing 2s ease infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes typing {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(-8deg);
+    }
+}
+
+/* Female hand animation */
+
+#femaleLabtop #JOSU_Website {
+    animation: Shaking 5s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes Shaking {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(-5deg);
+    }
+}
+
+#femaleLeftHand {
+    animation: riseHand 7s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes riseHand {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(-20deg);
+    }
+}
+
+/*slide3 end*/
+/*slide 4 start*/
+
+/* --------------------------holicopter animatiom------------------------------------- */
+#holicopter {
+    animation: fly 10s ease-in-out infinite alternate-reverse both;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes fly {
+    5% {
+        transform: translate3d(0px, 0px, 0px);
+        transform: rotateZ(1deg);
+    }
+
+    30% {
+        transform: translate3d(-4px, 0px, 0px);
+        transform: rotateZ(1deg);
+    }
+
+    50% {
+        transform: translate3d(4px, 0px, 0px);
+        transform: rotateZ(-2deg);
+    }
+
+    80% {
+        transform: translate3d(0px, 10px, 0px);
+    }
+
+    100% {
+        transform: translate3d(0px, -10px, 0px);
+    }
+}
+
+#fan {
+    animation: fanMove 0.25s linear infinite;
+    transform-origin: center center;
+    transform-box: fill-box;
+}
+
+@keyframes fanMove {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+/* -------------------enf of holicopter animation --------------------------------------------------- */
+
+/* -------------chartCircle animation---------------- */
+
+#chartCircle,
+#mobileChart, #mobileChart1, #lCahrt,
+#mChart,
+#RChart {
+    animation: chartMove 6s ease-in-out alternate-reverse infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes chartMove {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+/* -------------end of chartCircle animation---------------- */
+
+/* ------------------------------gears animations-------------------------- */
+#yellowGear,
+#whiteGear {
+    animation: spin 5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#purpleGear {
+    animation: spin 5s linear infinite reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+/* ------------------------------end of gears animations-------------------------- */
+
+/* ------------------------------girl legs animations-------------------------- */
+
+#leftLeg {
+    animation: ligMove 1.5s ease-in-out infinite alternate-reverse;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#rightLeg {
+    animation: ligMove 1.5s 0.6s ease-in-out infinite alternate-reverse;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes ligMove {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(-30deg);
+    }
+}
+/* ------------------------------end of gears animations-------------------------- */
+
+/* ------------------------------Seo animations-------------------------- */
+
+#seo {
+    animation: shakeword 1.5s ease-in-out infinite alternate-reverse;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#bigDolar {
+    animation: shakeword 1.5s 0.6s ease-in-out infinite alternate-reverse;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#smallDolar {
+    animation: shakeword 1.5s 0.6s ease-in-out infinite alternate-reverse;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes shakeword {
+    from {
+        transform: rotateX(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateX(-30deg);
+        transform: rotateZ(-40deg);
+    }
+}
+/* ------------------------------end seo animations-------------------------- */
+/*end of slide4*/
+
+/*input-validation-error*/
+
+.input-validation-error {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center right calc(0.375em + 0.1875rem);
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    padding: 0 0 30px 0;
+    font-size: 14px;
+    background: #fff;
+}
+
+    #footer .copyright {
+        text-align: center;
+        padding-top: 30px;
+        color: #535074;
+        font-size: 15px;
+    }
+
+    #footer .credits {
+        text-align: center;
+        font-size: 14px;
+        padding-top: 4px;
+        color: #8582a8;
+    }
+
+        #footer .credits a {
+            color: #1bb1dc;
+        }
+
+            #footer .credits a:hover {
+                color: #0a98c0;
+            }
